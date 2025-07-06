@@ -8,6 +8,7 @@ linters:
     - funlen
     - gocognit
     - godox
+    - ireturn
     - lll
     - mnd
     - testpackage

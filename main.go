@@ -22,6 +22,8 @@ import (
 	_ "golang.org/x/image/webp"
 )
 
+var errInvalidPoints = errors.New("invalid points")
+
 type opt struct {
 	File    string `description:"file path for target image file" long:"file"    required:"true" short:"f" value-name:"<file>"`
 	Verbose bool   `description:"verbose mode"                    long:"verbose" short:"v"`
@@ -90,7 +92,7 @@ func detect(opts opt) error {
 	for _, result := range results {
 		pp := result.GetPoints()
 		if len(pp) != 3 {
-			errs = append(errs, fmt.Errorf("invalid points: %v", pp))
+			errs = append(errs, fmt.Errorf("%w: %d", errInvalidPoints, len(pp)))
 
 			continue
 		}
