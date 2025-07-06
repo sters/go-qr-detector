@@ -12,4 +12,4 @@ go run main.go -f {FILE PATH}
 
 - Support multiple QR codes in 1 image file.
 - Support various image types (png/jpeg/gif/webp)
-- If QR code founds, create another file such as `{FILE PATH}_detected.png`.
+- If QR code found, creating another file such as `{FILE PATH}_detected.png`.
