@@ -1,45 +1,14 @@
-# go-project-boilerplate
+# go-qr-detector
 
-[![go](https://github.com/sters/go-project-boilerplate/workflows/Go/badge.svg)](https://github.com/sters/go-project-boilerplate/actions?query=workflow%3AGo)
-[![codecov](https://codecov.io/gh/sters/go-project-boilerplate/branch/main/graph/badge.svg)](https://codecov.io/gh/sters/go-project-boilerplate)
-[![go-report](https://goreportcard.com/badge/github.com/sters/go-project-boilerplate)](https://goreportcard.com/report/github.com/sters/go-project-boilerplate)
-
-My go project boilerplate.
-
-## Includes
-
-- Makefile
-  - run
-  - test
-  - cover
-  - Tools install from `./tools/tools.go`
-- Github Actions
-  - Go
-    - Lint by golangcilint
-    - Run test and upload test coverage to codecov
-  - Release
-    - Make release when vX.X.X tag is added by goreleaser.
-- README
-  - Badge: Github Actions/Go
-  - Badge: Codecov
-  - Badge: Go Report
-
-## TODO when use this
-
-- [ ] Change run task in `Makefile` if needed
-- [ ] Change package name in `go.mod`
-- [ ] Update `README.md`
-
----
-
-## Install
-
-```shell
-go install github.com/sters/go-project-boilerplate@latest
-```
-
-or use specific version from [Releases](https://github.com/sters/go-project-boilerplate/releases).
+[![go](https://github.com/sters/go-qr-detector/workflows/Go/badge.svg)](https://github.com/sters/go-qr-detector/actions?query=workflow%3AGo)
+[![codecov](https://codecov.io/gh/sters/go-qr-detector/branch/main/graph/badge.svg)](https://codecov.io/gh/sters/go-qr-detector)
+[![go-report](https://goreportcard.com/badge/github.com/sters/go-qr-detector)](https://goreportcard.com/report/github.com/sters/go-qr-detector)
 
 ## Usage
 
-....
+```
+go run main.go -f {FILE PATH}
+```
+
+- Support multiple QR codes in 1 image file.
+- Support various image types (png/jpeg/gif/webp)

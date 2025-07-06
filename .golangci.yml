@@ -8,6 +8,8 @@ linters:
     - funlen
     - gocognit
     - godox
+    - lll
+    - mnd
     - testpackage
     - wsl
 
@@ -28,7 +30,6 @@ issues:
         - dupl
         - funlen
         - gocyclo
-        - lll
         - goconst
         - testpackage
         - goerr113

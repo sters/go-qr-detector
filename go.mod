@@ -1,8 +1,16 @@
-module github.com/sters/go-project-boilerplate
+module github.com/sters/go-qr-detector
 
 go 1.24
 
 tool github.com/golangci/golangci-lint/cmd/golangci-lint
+
+require (
+	github.com/fogleman/gg v1.3.0
+	github.com/jessevdk/go-flags v1.6.1
+	github.com/makiuchi-d/gozxing v0.1.1
+	github.com/morikuni/failure v1.1.2
+	golang.org/x/image v0.0.0-20190802002840-cff245a6509b
+)
 
 require (
 	4d63.com/gocheckcompilerdirectives v1.3.0 // indirect
@@ -62,6 +70,7 @@ require (
 	github.com/go-xmlfmt/xmlfmt v1.1.3 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gofrs/flock v0.12.1 // indirect
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/golangci/dupl v0.0.0-20250308024227-f665c8d69b32 // indirect
 	github.com/golangci/go-printf-func-name v0.1.0 // indirect
@@ -183,6 +192,7 @@ require (
 	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.31.0 // indirect
+	golang.org/x/xerrors v0.0.0-20220517211312-f3a8303e98df // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
