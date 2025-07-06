@@ -9,7 +9,7 @@ require (
 	github.com/jessevdk/go-flags v1.6.1
 	github.com/makiuchi-d/gozxing v0.1.1
 	github.com/morikuni/failure v1.1.2
-	golang.org/x/image v0.0.0-20190802002840-cff245a6509b
+	golang.org/x/image v0.18.0
 )
 
 require (
